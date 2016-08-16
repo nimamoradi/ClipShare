@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#df4a3a2a"
+    >
+
+    <ImageView
+        android:layout_width="@dimen/listview.image.max_size_x"
+        android:layout_height="@dimen/listview.image.max_size_y"
+
+        android:background="#ff4a3a2a"
+        android:id="@+id/list.image"
+        android:layout_margin="@dimen/default_margin"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="niam"
+        android:textSize="12sp"
+        android:paddingRight="@dimen/default_padding"
+        android:paddingLeft="@dimen/default_padding"
+android:textColor="@color/colorAccent"
+        android:id="@+id/release_date"
+        android:layout_below="@+id/movie_description"
+        android:layout_alignLeft="@+id/movie_description"
+        android:layout_alignStart="@+id/movie_description"
+        android:layout_marginTop="18dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/movie_name"
+    android:text="test"
+    android:lines="1"
+android:padding="@dimen/default_padding"
+    android:textColor="@color/colorAccent"
+
+    android:layout_below="@+id/list.image"
+    android:layout_alignRight="@+id/list.image"
+    android:layout_alignEnd="@+id/list.image" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_description"
+        android:text="test"
+        android:textColor="@color/colorAccent"
+        android:padding="@dimen/default_padding"
+        android:lines="1"
+
+        android:layout_below="@+id/movie_name"
+        android:layout_alignLeft="@+id/movie_name"
+        android:layout_alignStart="@+id/movie_name"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
